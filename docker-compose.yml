@@ -15,7 +15,7 @@ services:
       - certbot-var:/var/lib/letsencrypt
       - dhparam:/etc/ssl/certs
     networks:
-      - app-network
+      - shared-network
 
   certbot:
     image: certbot/certbot
@@ -37,7 +37,7 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/ec2-user/html/
+      device: /home/ec2-user/damishshah.github.io/
       o: bind
   dhparam:
     driver: local
@@ -47,5 +47,6 @@ volumes:
       o: bind
 
 networks:
-  app-network:
-    driver: bridge
+  shared-network:
+    external:
+      name: videochat-infrastructure_shared-network
