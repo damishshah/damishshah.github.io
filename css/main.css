@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Muli,sans-serif;
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: -0.02em;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 92px;
+    white-space: nowrap;
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    font: 5rem Helvetica, Sans-Serif;
+    letter-spacing: -5px;
+    color: black; 
+    opacity: 0.5;
+}
+
+.logo:after {
+    content: "DS";
+    position: absolute; left: 10px; top: 5px;
+    color: green;
+    opacity: 0.5;
+}
+
+.right-header {
+    position: relative;
+    display: block;
+    height: 100%;
+    float: right;
+    text-align: right;
+}
+
+header nav li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    border: 0px;
+}
+
+header nav li a {
+    color: #000;
+    display: block;
+    line-height: 92px;
+    padding: 0 1em;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: auto;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hello {
+    text-align: center;
+    height: 90vh;
+    margin: 0;
+    position: relative;
+    -ms-transform: translateY(40%);
+    transform: translateY(40%);
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+.about {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    margin: 25px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-intro {
+    color: #666666;
+    font-size: 2.6rem;
+}
+
+.about-text {
+    float: left;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.profile-img {
+    float: right;
+    height: 500px;
+}
+
+#topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+  }
+  
+  #topButton:hover {
+    background-color: darkgreen;
+  } 
