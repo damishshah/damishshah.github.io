@@ -125,29 +125,59 @@ main > div {
     transform: translateY(40%);
 }
 
+.down-arrow {
+    border: solid green;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20vh;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -webkit-animation-name: bounce; 
+    animation-name: bounce; 
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
 @keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-moz-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-webkit-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-o-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @-ms-keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes bounce { 
+    0%, 6.6%, 16.6%, 26.6%, 100% {-webkit-transform: translateY(0) rotate(45deg)} 
+    13.3% {-webkit-transform: translateY(-30px) rotate(45deg)} 
+    20% {-webkit-transform: translateY(-15px) rotate(45deg)} 
+}
+ 
+@keyframes bounce { 
+    0%, 6.6%, 16.6%, 26.6%, 100% {transform: translateY(0) rotate(45deg)} 
+    13.3% {transform: translateY(-30px) rotate(45deg)} 
+    20% {transform: translateY(-15px) rotate(45deg)} 
 }
 
 /* About Me Section */
