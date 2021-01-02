@@ -329,10 +329,6 @@ main>div {
   flex-wrap: wrap;
 }
 
-.projects-slides h2 {
-  white-space: nowrap;
-}
-
 .projects-slides>div {
   flex: 1 0 50%;
 }
