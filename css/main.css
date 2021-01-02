@@ -101,6 +101,9 @@ main {
 main > div {
     min-height: 100vh;
     /* border: 2px solid red; */
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
 }
 
 .about-inner, .projects-inner, .resume-inner, .contact-inner {
@@ -113,7 +116,6 @@ main > div {
 .hello {
     height: 100vh;
     text-align: center;
-    margin: 0;
     position: relative;
     animation: fadeIn ease 4s;
     -webkit-animation: fadeIn ease 4s;
@@ -316,7 +318,7 @@ main > div {
     padding: 15px;
 }
 
-.project-slide {
+.project-slide:not(.overlay) {
     background: #8ece8e;
     border: 2px solid #006400;
     margin: 10px;
@@ -330,7 +332,7 @@ main > div {
     max-width: 350px;
 }
 
-.project-slide:hover {
+.project-slide:hover:not(.overlay) {
     top: -10px;
 }
 
@@ -359,6 +361,10 @@ main > div {
     content: '';
     float: left;
     padding-top: 100%;
+}
+
+.project-slide iframe {
+    height: 100%;
 }
 
 .technologies {
@@ -468,3 +474,22 @@ main > div {
 #topButton:hover {
     background-color: #006400;
 } 
+
+.overlay {
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: #8ece8e;
+    border: 2px solid #006400;
+    opacity: 1;
+    transition: opacity .2s ease-out;
+}
+
+.overlay iframe {
+    height: 100%;
+    width: 100%;
+}
