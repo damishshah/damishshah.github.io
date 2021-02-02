@@ -397,12 +397,8 @@ main > div {
 .project-slide header > h4 {
   font-size: 1.6em;
   margin-top: 10px;
-  /* padding-top: 0; */
-}
-
-.project-slide header {
-  /* padding-top: 0; */
-  /* margin-top: 0; */
+  margin-right: 10px;
+  margin-bottom: 2px;
 }
 
 .project-slide a,
