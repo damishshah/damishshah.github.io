@@ -3,6 +3,7 @@ import './Projects.css';
 
 const Projects = () => {
   const [expandedVideo, setExpandedVideo] = useState(false);
+  const [expandedTrailerVideo, setExpandedTrailerVideo] = useState(false);
 
   const myProjects = [
     {
@@ -31,17 +32,17 @@ const Projects = () => {
       github: 'https://github.com/damishshah/black-terminal'
     },
     {
-      title: 'Sluglord\'s Run',
-      description: 'Winner of the 2016 NYU Global Game Jam for Best Game Design! An infinite scroll racer where you and a team of friends try to escape the dreaded Sluglord! But beware: if you get stuck only your teammates can help!',
-      technologies: 'unity, c#',
-      url: 'https://gamecenter.nyu.edu/global-game-jam-2016-winners/#gallery-1'
-    },
-    {
       title: 'This Website!',
       description: 'Self-hosted personal portfolio website built with React.',
       technologies: 'react, html5, css, javascript, aws ec2, docker + compose, nginx',
       url: 'https://www.damishshah.com',
       github: 'https://github.com/damishshah/damishshah.github.io'
+    },
+    {
+      title: 'Sluglord\'s Run',
+      description: 'Winner of the 2016 NYU Global Game Jam for Best Game Design! An infinite scroll racer where you and a team of friends try to escape the dreaded Sluglord! But beware: if you get stuck only your teammates can help!',
+      technologies: 'unity, c#',
+      url: 'https://gamecenter.nyu.edu/global-game-jam-2016-winners/#gallery-1'
     },
     {
       title: 'VR Element Bending Sandbox',
@@ -55,7 +56,7 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="projects-container">
         <h2 className="section-title">My Projects</h2>
-        
+
         <div className="projects-section">
           <h3 className="subsection-title">Some of My Work</h3>
           <div className="projects-grid">
@@ -88,8 +89,8 @@ const Projects = () => {
                 </div>
               </div>
             ))}
-            
-            <div 
+
+            <div
               className={`project-card video-card ${expandedVideo ? 'expanded' : ''}`}
               onClick={() => setExpandedVideo(!expandedVideo)}
             >
@@ -101,6 +102,18 @@ const Projects = () => {
                     type="video/mp4"
                   />
                 </video>
+              </div>
+              <div className="project-footer">
+                <p className="project-technologies">Click to enlarge</p>
+              </div>
+            </div>
+            <div
+              className={`project-card video-card ${expandedTrailerVideo ? 'expanded' : ''}`}
+              onClick={() => setExpandedTrailerVideo(!expandedTrailerVideo)}
+            >
+              <div className="project-content">
+                <h4 className="project-title">Sluglord's Run Trailer</h4>
+                <iframe src="https://www.youtube.com/embed/_JPF5r6H4Hc?rel=0" title="YouTube video player" frameborder="0" allow="encrypted-media; picture-in-picture; web-share;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
               </div>
               <div className="project-footer">
                 <p className="project-technologies">Click to enlarge</p>
