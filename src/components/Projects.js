@@ -19,12 +19,6 @@ const Projects = () => {
       github: 'https://github.com/damishshah/comic-book-reader'
     },
     {
-      title: 'VR Element Bending Sandbox',
-      description: 'A virtual reality application using gesture recognition to allow players to control elements in a virtual sandbox.',
-      technologies: 'unity, c#, steamvr, blender',
-      github: 'https://github.com/damishshah/vr-earth-bending'
-    },
-    {
       title: 'Authentication Server',
       description: 'Auth server template to manage user accounts. Features full suite of account management API functions including: user registration, email verification, password recovery, and user data management.',
       technologies: 'nodejs, dynamodb, jwt, sendgrid',
@@ -48,6 +42,12 @@ const Projects = () => {
       technologies: 'react, html5, css, javascript, aws ec2, docker + compose, nginx',
       url: 'https://www.damishshah.com',
       github: 'https://github.com/damishshah/damishshah.github.io'
+    },
+    {
+      title: 'VR Element Bending Sandbox',
+      description: 'A virtual reality application using gesture recognition to allow players to control elements in a virtual sandbox.',
+      technologies: 'unity, c#, steamvr, blender',
+      github: 'https://github.com/damishshah/vr-earth-bending'
     }
   ];
 
