@@ -31,6 +31,18 @@ const Projects = () => {
       github: 'https://github.com/damishshah/auth-server'
     },
     {
+      title: 'Black Terminal',
+      description: 'A prisoner\'s dilemma based party game written in golang. Uses websockets for concurrent gameplay with a live leaderboard.',
+      technologies: 'golang, websockets, sqlite, docker + compose',
+      github: 'https://github.com/damishshah/black-terminal'
+    },
+    {
+      title: 'Sluglord\'s Run',
+      description: 'Winner of the 2016 NYU Global Game Jam for Best Game Design! An infinite scroll racer where you and a team of friends try to escape the dreaded Sluglord! But beware: if you get stuck only your teammates can help!',
+      technologies: 'unity, c#',
+      url: 'https://gamecenter.nyu.edu/global-game-jam-2016-winners/#gallery-1'
+    },
+    {
       title: 'This Website!',
       description: 'Self-hosted personal portfolio website built with React.',
       technologies: 'react, html5, css, javascript, aws ec2, docker + compose, nginx',
