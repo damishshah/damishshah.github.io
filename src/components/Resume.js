@@ -2,7 +2,7 @@ import React from 'react';
 import './Resume.css';
 
 const Resume = () => {
-  const resumeUrl = 'https://www.dropbox.com/s/dl/uehd3kjc2046ekt/Damish Shah - Resume (Latest).pdf';
+  const resumeUrl = 'https://drive.google.com/uc?export=download&id=18IOCj5pBcI_nosb1VPs3v8_HWNv6HGa5';
 
   return (
     <section id="resume" className="resume">
